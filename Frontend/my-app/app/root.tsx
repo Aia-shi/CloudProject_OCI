@@ -9,8 +9,8 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Head";
+import Footer from "./components/Foot";
 import PanelProvider from "./context/PanelContext";
 import Navbar from "./components/Navbar";
 import RightPanel from "./components/RightPanel";

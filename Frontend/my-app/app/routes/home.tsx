@@ -1,8 +1,7 @@
 import Navbar from "~/components/Navbar";
 import RightPanel from "~/components/RightPanel";
-import type { Route } from "./+types/home";
 
-export function meta({}: Route.MetaArgs) {
+export function meta() {
   return [
     { title: "New React Router App" },
     { name: "description", content: "Welcome to React Router!" },

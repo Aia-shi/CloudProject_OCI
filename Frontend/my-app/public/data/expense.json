@@ -1,0 +1,18 @@
+{
+  "periods": [
+    { "id": 1, "name": "Wydatki w październiku" },
+    { "id": 2, "name": "Wydatki we wrześniu" }
+  ],
+  "expenses": [
+    {
+      "id": 1,
+      "periodId": 1,
+      "title": "Zakup nowego telefonu",
+      "amount": 1999.99,
+      "description": "Smartfon XYZ",
+      "date": "2025-10-07",
+      "status": "oplacony",
+      "category": "zakupy"
+    }
+  ]
+}

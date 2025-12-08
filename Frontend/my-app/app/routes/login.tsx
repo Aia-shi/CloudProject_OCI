@@ -11,7 +11,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Login() {
   const navigate = useNavigate();
 
-  const handleLogin = () => {
+  const handleHome = () => {
     navigate("/home");
   };
   const handleRegister = () => {    
@@ -39,11 +39,11 @@ export default function Login() {
         </div>
       </div>
       <button 
-        onClick={handleLogin}
+        onClick={handleHome}
         className=" btn btn-neutral bg-[#059669] border-0  flex-center text-[20px] mt-2 w-[258px] self-center h-12">
         Logowanie
       </button>
-      <button className="btn btn-ghost border-0">Nie posiadasz konta?</button>
+      <button onClick={handleRegister} className="btn btn-ghost border-0">Nie posiadasz konta?</button>
 
     </fieldset>
     </div>

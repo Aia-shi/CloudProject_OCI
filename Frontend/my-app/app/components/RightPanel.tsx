@@ -1,45 +1,13 @@
 import React from "react";
 import { PanelContext } from "../context/PanelContext";
 
-function Wydatki() {
-  return (
-    <div className="p-6 h-full">
-      <h3>Wydatki</h3>
-    </div>
-  );
-}
 
-function Przychody() {
-  return (
-    <div className="p-6 h-full">
-      <h3>Przychody</h3>
-    </div>
-  );
-}
+import { Wydatki } from "./panels/Wydatki";
+import { Przychody } from "./panels/Przychody";
+import { Oszczednosci } from "./panels/Oszczednosci";
+import { Obrazy } from "./panels/Obrazy";
+import { Profil } from "./panels/Profil";
 
-function Oszczednosci() {
-  return (
-    <div className="p-6 h-full">
-      <h3>Oszczędności</h3>
-    </div>
-  );
-}
-
-function Obrazy() {
-  return (
-    <div className="p-6 h-full">
-      <h3>Obrazy</h3>
-    </div>
-  );
-}
-
-function Profil() {
-  return (
-    <div className="p-6 h-full">
-    <h3>Profil</h3>
-    </div>
-  );
-}
 export function RightPanel(): React.ReactElement {
   const { selected } = React.useContext(PanelContext);
 

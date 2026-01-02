@@ -1,4 +1,4 @@
-﻿# CloudProject_Alibaba
+﻿# CloudProject_OCI
 
 This repository contains a code for group project of WSB Academy students.
 
@@ -24,3 +24,4 @@ Jakub Jania
 ### Technical Writer
 Patryk Grzybowski
 (github.com/patrykos121)
+

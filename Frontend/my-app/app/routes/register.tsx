@@ -11,9 +11,13 @@ export function meta({}: Route.MetaArgs) {
 export default function Register() {
   const navigate = useNavigate();
 
-  const handleRegister = () => {
+  const handleHome = () => {
     navigate("/home");
   };
+  const handleLogin = () => {    
+    navigate("/");
+  };
+
   return (
   <div className="flex w-full h-full justify-center items-center login-form">
     <div className="w-[516px] mx-auto">
@@ -36,12 +40,11 @@ export default function Register() {
         </div>
       </div>
       <button 
-        onClick={handleRegister}
-        className=" btn btn-neutral flex-center text-[20px] mt-2 w-[258px] self-center h-12"
-      >
-        Logowanie
+        onClick={handleHome}
+        className=" btn btn-neutral bg-[#059669] border-0  flex-center text-[20px] mt-2 w-[258px] self-center h-12">
+        Zarejestruj się
       </button>
-      <button>Posiadasz już konto?</button>
+      <button onClick={handleLogin} className="btn btn-ghost border-0">Posiadasz konta?</button>
     </fieldset>
     </div>
   </div>

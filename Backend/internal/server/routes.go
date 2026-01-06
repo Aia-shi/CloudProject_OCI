@@ -20,6 +20,7 @@ func SetupRoutes() http.Handler {
 
 	mux.HandleFunc("POST /user/register", userHandler.CreateUser)
 	mux.HandleFunc("POST /user/login", userHandler.LoginUser)
+	mux.HandleFunc("GET /user/logout", userHandler.Logout)
 
 	stack := middlewares.CreateStack(
 		middlewares.Logging,

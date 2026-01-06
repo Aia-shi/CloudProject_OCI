@@ -27,5 +27,9 @@ func SetupRoutes() http.Handler {
 		middlewares.CorsMiddleware,
 	)
 
+	authMux := http.NewServeMux()
+
+	mux.Handle("/", middlewares.Authentication(authMux))
+
 	return stack(mux)
 }
